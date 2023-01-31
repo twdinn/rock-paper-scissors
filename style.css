@@ -2,7 +2,6 @@ body {
   display: flex;
   justify-content: center;
   background-color: #a27b5c;
-  margin-top: 40px;
 }
 
 .game-container {
@@ -11,9 +10,16 @@ body {
   justify-content: center;
   align-items: center;
   background: linear-gradient(#dcd7c9, #3f4e4f);
-  border: 2px solid #2c3639;
-  border-radius: 10px;
+  border: 0.5rem solid #2c3639;
+  border-radius: 0.625rem;
+  height: 30rem;
+  width: 28rem;
 }
+
+h1 {
+  font-size: 2rem;
+}
+
 .game-choices {
   display: flex;
   margin-bottom: 20px;
@@ -23,13 +29,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
-  width: 110px;
-  height: 100px;
-  border: 2px solid black;
-  border-radius: 50px;
-  margin: 20px;
-  padding: 2px;
+  font-size: 5rem;
+  width: 6.8rem;
+  height: 6.25rem;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  margin: 1.25rem;
+  padding: 2rem;
   background-color: #dcd7c9;
 }
 
@@ -37,5 +43,44 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/* Change sizes to make responsive */
+@media (max-width: 460px) {
+  .game-container {
+    height: 25rem;
+    width: 22rem;
+  }
+
+  .game-choice {
+    font-size: 3.5rem;
+    width: 4.8rem;
+    height: 4.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .game-container {
+    height: 20rem;
+    width: 17rem;
+  }
+
+  .game-choice {
+    margin: 0.6rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .game-container {
+    height: 19rem;
+    width: 16rem;
+  }
+
+  .game-choice {
+    margin: 0.2rem;
+  }
 }
