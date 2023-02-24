@@ -1,1 +1,1 @@
-# rock-paper-scissors
+https://twdinn.github.io/rock-paper-scissors/
